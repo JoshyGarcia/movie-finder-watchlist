@@ -12,7 +12,7 @@ body {
 
 header {
     height: 250px;
-    background: rgba(0, 0, 0, 0.6) url("images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+    background: rgba(0, 0, 0, 0.6) url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
     background-size: cover;
     background-blend-mode: darken;
     background-position: center;
@@ -37,6 +37,7 @@ nav {
 h1 {
     font-size: 3em;
     font-weight: 500;
+    letter-spacing: 3px;
 }
 
 nav a {
@@ -55,10 +56,14 @@ nav a {
     top: -18px;
 }
 
-.movies-container {
+.content-container {
     background-color: #121212;
-    min-height: 75vh;
+    min-height: 74vh;
 }
+
+/* .movies-container {
+    
+} */
 
 .search-input {
     border-bottom-left-radius: 5px;
@@ -82,4 +87,15 @@ nav a {
     padding: 0.7em;
     font-size: 1rem;
 
+}
+
+.movie {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.movie img {
+    width: 30%;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="index.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
@@ -13,11 +13,13 @@
                 <nav><a href="watchlist.html">My Watchlist</a></a></nav>
             </div>        
         </header>
-        <div class="movies-container">
-            <form name="search" class="search-bar">
-                <input type="text" placeholder="Search for a movie" class="search-input">
+        <div class="content-container">
+            <form name="search" class="search-bar" id="search-form">
+                <input type="text" placeholder="Search for a movie" class="search-input" id="search-value">
                 <button type="submit" class="search-btn">Search</button>
             </form>
+            <div id="movies-container">
+            </div>
         </div>
         <script src="index.js"></script>
     </body>
