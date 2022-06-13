@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <link href="index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Find your film</h1>
-            <nav><a href="watchlist.html">My Watchlist</a></a></nav>
+            <div class="header-container">
+                <h1>Find your film</h1>
+                <nav><a href="watchlist.html">My Watchlist</a></a></nav>
+            </div>        
         </header>
+        <div class="movies-container">
+            <form name="search" class="search-bar">
+                <input type="text" placeholder="Search for a movie" class="search-input">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
