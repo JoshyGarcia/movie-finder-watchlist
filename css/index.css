@@ -64,6 +64,7 @@ nav a {
 .content-container {
     background-color: #121212;
     min-height: 74vh;
+    font-size: 1.3rem;
 }
 
 /* .movies-container {
@@ -91,7 +92,7 @@ nav a {
     width: 80px;
     padding: 0.7em;
     font-size: 1rem;
-
+    cursor: pointer;
 }
 
 .movie {
@@ -120,21 +121,25 @@ nav a {
 
 .movie-genre {
     padding: 0 0.5em;
+    max-width: 50%;
 }
 
 .movie-details button {
     background: #121212;
     border: none;
     cursor: pointer;
+    font-size: 1.1rem;
 }
 
 .watchlist-icon {
     height: 1em;
     width: 1em;
     padding-right: 0.2em ;
+    position: relative;
+    bottom: -3px;
 }
 .star-icon {
-    height: 15px;
-    width: 15px;
+    height: 1.4rem;
+    width: 1.4rem;
     padding: 0 0.1em;
 }
