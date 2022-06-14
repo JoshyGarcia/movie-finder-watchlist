@@ -3,7 +3,12 @@ html {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: 'Joan', sans-serif;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 body {
@@ -91,11 +96,45 @@ nav a {
 
 .movie {
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    justify-content: space-between;
+
+    border-bottom: 1px #2C2C2C solid;
 }
 
-.movie img {
-    width: 30%;
+.movie-poster {
+    width: 20%;
+}
+
+.movie-description {
+    width: 70%;
+}
+
+.movie-details {
+    display: flex;
+    max-width: 450px;
+    justify-content: space-between;
+}
+
+.movie-genre {
+    padding: 0 0.5em;
+}
+
+.movie-details button {
+    background: #121212;
+    border: none;
+    cursor: pointer;
+}
+
+.watchlist-icon {
+    height: 1em;
+    width: 1em;
+    padding-right: 0.2em ;
+}
+.star-icon {
+    height: 15px;
+    width: 15px;
+    padding: 0 0.1em;
 }

@@ -2,10 +2,6 @@ const searchInput = document.getElementById('search-value');
 const searchBar = document.getElementById('search-form');
 const movieCointainer = document.getElementById('movies-container');
 
-
-
-console.log(searchBar);
-
 searchBar.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -14,7 +10,6 @@ searchBar.addEventListener('submit', e => {
 })
 
 function render(output) {
-    // console.log(output)
     movieCointainer.innerHTML = output;
 }
 
@@ -28,19 +23,24 @@ async function getMovies(search){
         fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=ae90c67e&plot=short`)
             .then(response => response.json())
             .then(movie => {
-                // console.log(movie)
                 output += `
                         <div class="movie">
-                            <img src="${movie.Poster}">
-                            <h3>${movie.Title} (${movie.Year})</h3>
-                            <p>${movie.Plot}</p>
+                            <div class="movie-poster">
+                                <img src="${movie.Poster}">
+                            </div>
+                            <div class="movie-description">
+                                <h3>${movie.Title}  <img src ="images/star-icon1.png" class="star-icon">  ${movie.imdbRating}</h3>
+                                <div class="movie-details">
+                                    <p class="movie-runtime">${movie.Runtime}</p>
+                                    <p class="movie-genre">${movie.Genre}</p>
+                                    <button><img src="images/watchlist-btn.png" class="watchlist-icon"> Watchlist</button>
+                                </div>
+                                <p>${movie.Plot}</p>
+                            </div>
+                            
                         </div>
                         `
                 render(output)
             })
     })
-
-    
-
-
 }
