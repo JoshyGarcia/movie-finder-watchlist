@@ -143,3 +143,14 @@ nav a {
     width: 1.4rem;
     padding: 0 0.1em;
 }
+
+@media screen and (max-width: 500px) {
+    .movie {
+        background-color: rebeccapurple;
+    }
+
+    h1 {
+        background-color: rebeccapurple;
+
+    }
+}
