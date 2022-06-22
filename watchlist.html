@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+        <link href="css/watchlist.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>My Watchlist</h1>
-            <nav><a href="index.html">Search for movies</a></a></nav>
+            <div class="header-container">
+                <h1>My Watchlist</h1>
+                <nav><a href="index.html">Search for movies</a></a></nav>
+            </div>
         </header>
-        <script src="index.js"></script>
+        <div class="content-container">
+
+            <div id="watchlist-container">
+            </div>
+        </div>
+        <script type="module" src="watchlist.js"></script>
     </body>
 </html>
