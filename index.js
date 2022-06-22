@@ -33,7 +33,7 @@ async function getMovies(search){
                                 <div class="movie-details">
                                     <p class="movie-runtime">${movie.Runtime}</p>
                                     <p class="movie-genre">${movie.Genre}</p>
-                                    <button><img src="images/watchlist-btn.png" class="watchlist-icon"> Watchlist</button>
+                                    <button><img src="images/watchlist-btn.png" class="watchlist-btn"> Watchlist</button>
                                 </div>
                                 <p>${movie.Plot}</p>
                             </div>
