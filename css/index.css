@@ -85,10 +85,6 @@ nav a {
     font-size: 1.3rem;
 }
 
-/* .movies-container {
-    
-} */
-
 .search-input {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -135,6 +131,7 @@ nav a {
     display: flex;
     max-width: 450px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .movie-genre {
@@ -142,24 +139,32 @@ nav a {
     max-width: 50%;
 }
 
-.movie-details button {
-    background: #121212;
-    border: none;
+.watchlist-btn {
+    color: #121212;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
 }
 
-.watchlist-btn {
-    height: 1em;
-    width: 1em;
-    padding-right: 0.2em ;
-    position: relative;
-    bottom: -3px;
+.remove-btn {
+    color: #121212;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
 }
+
 .star-icon {
     height: 1.4rem;
     width: 1.4rem;
     padding: 0 0.1em;
+}
+
+.on-watchlist {
+    background-color: green;
 }
 
 @media (max-width:550px){
